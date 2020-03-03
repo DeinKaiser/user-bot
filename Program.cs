@@ -10,7 +10,7 @@ namespace UserInfoBot
 {
     class Program
     {
-        static TelegramBotClient botClient = new TelegramBotClient("735768763:AAH_bwM6ECFa-ZyiEKj-j0OhSeAkSpn0pPE");
+        static TelegramBotClient botClient = new TelegramBotClient("BOT_TOKEN");
         public static MySqlConnection connection = DBUtils.GetDBConnection();
         static void Main()
         {
