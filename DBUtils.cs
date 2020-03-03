@@ -15,7 +15,7 @@ namespace UserInfoBot
             int port = 3306;
             string database = "user";
             string username = "root";
-            string password = "dwdwfefefe";
+            string password = "password";
 
             return DBMySQLUtils.GetDBConnection(host, port, database, username, password);
         }
