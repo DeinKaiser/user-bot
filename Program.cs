@@ -137,11 +137,11 @@ namespace UserInfoBot
                             string last_name = "";
                             while (rdr.Read())
                             {
-                                id = rdr.GetInt32(0);
-                                tg_id = rdr.GetString(1);
-                                user_name = rdr.GetString(2);
-                                first_name = rdr.GetString(3);
-                                last_name = rdr.GetString(4);
+                               id = rdr.GetInt32(0);
+                                tg_id = rdr.GetValue(1).ToString();
+                                user_name = rdr.GetValue(2).ToString();
+                                first_name = rdr.GetValue(3).ToString();
+                                last_name = rdr.GetValue(4).ToString();
                             }
                             rdr.Close();
                             await botClient.SendTextMessageAsync(
